@@ -3,40 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Gaming - Join the Fun!</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gameluxx.site | Premium Social Gaming Arena & Arcade</title>
+    <meta name="description" content="Dive into Gameluxx.site for free-to-play social games where every challenge is community-powered. Pure entertainment, zero risk.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Russo+One&family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Social Gaming</h1>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#join">Join Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- STICKY NAVIGATION -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <div class="logo"><span class="brand">Gameluxx</span><span class="domain">.site</span></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <button id="nav-cta" class="russo">Play Free Now</button>
+            <button id="hamburger" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="var(--text-main)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <section id="features">
-            <h2>Features</h2>
-            <p>Connect with friends and make new ones, compete in exciting games, and be part of a vibrant community!</p>
-        </section>
-        <section id="join">
-            <h2>Join Us Today</h2>
-            <p>Sign up now and start your gaming adventure!</p>
-            <button><a href="signup.html">Sign Up</a></button>
-        </section>
-    </main>
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-grid container">
+            <div class="hero-content">
+                <span class="badge russo">PREMIUM SOCIAL PLAY ARENA</span>
+                <h1>YOUR JOY. YOUR FIELD. <span class="gradient-text">YOUR GAME.</span></h1>
+                <p>Step into the ultimate social gaming arena where community challenges, leaderboards and arcade modules collide. All games are free, fair and built for friends.</p>
+                <div class="hero-buttons">
+                    <button class="btn accent-yellow italic">Get Started Free</button>
+                    <button class="btn outline">Learn More</button>
+                </div>
+                <div class="live-counter">
+                    <span class="dot"></span>
+                    <span class="text">Over <span id="player-count">18,290</span>+ active players</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="device-frame">
+                    <img src="https://source.unsplash.com/1600x900/?red,abstract" alt="Gaming scene">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- HIGHLIGHTS BAR -->
+    <section id="highlights">
+        <div class="container highlights-bar">
+            <div class="item"><i data-lucide="shield-check"></i>100% Free Social Play</div>
+            <div class="item"><i data-lucide="coins"></i>No Real Credits Required</div>
+            <div class="item"><i data-lucide="zap"></i>Instant Browser Arcade</div>
+            <div class="item"><i data-lucide="award"></i>Fair & Fun Play System</div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Why Enter the <span class="neon-green">Arena?</span></h2>
+            <div class="features-grid">
+                <div class="card">
+                    <i data-lucide="wallet" class="icon"></i>
+                    <h3>Zero Entry Fee</h3>
+                    <p>Play instantly without spending a dime. All arenas are open and free for everyone.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="rocket" class="icon"></i>
+                    <h3>Instant Access</h3>
+                    <p>Jump into any game on any device with no downloads, no waiting.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="layout" class="icon"></i>
+                    <h3>Cross-Device Sync</h3>
+                    <p>Your profile travels with you. Pick up right where you left off, anywhere.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="sparkles" class="icon"></i>
+                    <h3>High-Fidelity Play</h3>
+                    <p>Experience crisp graphics and seamless performance across the board.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAMES GRID -->
+    <section id="games" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Trending Play Arenas</h2>
+            <p class="subtitle">Dive into the hottest arenas handpicked by our community.</p>
+            <div class="games-grid">
+                <!-- game cards -->
+                <div class="game-card">
+                    <div class="thumb-container">
+                        <img src="https://source.unsplash.com/1600x900/?arena,red" alt="Scourge of Rome">
+                        <span class="tag">STEADY PLAY</span>
+                    </div>
+                    <div class="game-details">
+                        <h3>Scourge of Rome</h3>
+                        <p>Battle in the ancient colosseum and claim your legacy.</p>
+                        <button class="game-btn neon-green">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="thumb-container">
+                        <img src="https://source.unsplash.com/1600x900/?candy,magenta" alt="King of Sweets">
+                        <span class="tag pink">TRENDING</span>
+                    </div>
+                    <div class="game-details">
+                        <h3>King of Sweets</h3>
+                        <p>Collect sugary points and reign supreme in this sugary showdown.</p>
+                        <button class="game-btn pink">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="thumb-container">
+                        <img src="https://source.unsplash.com/1600x900/?neon,green" alt="Neon Nights">
+                        <span class="tag yellow">POPULAR</span>
+                    </div>
+                    <div class="game-details">
+                        <h3>Neon Nights</h3>
+                        <p>Glide through the neon streets and light up the leaderboard.</p>
+                        <button class="game-btn yellow">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="thumb-container">
+                        <img src="https://source.unsplash.com/1600x900/?ocean,yellow" alt="Ocean Fortune">
+                        <span class="tag">NEW CHALLENGE</span>
+                    </div>
+                    <div class="game-details">
+                        <h3>Ocean Fortune</h3>
+                        <p>Explore the depths and uncover sunken treasures.</p>
+                        <button class="game-btn neon-green">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="thumb-container">
+                        <img src="https://source.unsplash.com/1600x900/?desert,red" alt="Western Gold">
+                        <span class="tag pink">VOLATILE PLAY</span>
+                    </div>
+                    <div class="game-details">
+                        <h3>Western Gold</h3>
+                        <p>Ride the dusty trails and strike it rich in the Wild West.</p>
+                        <button class="game-btn pink">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="thumb-container">
+                        <img src="https://source.unsplash.com/1600x900/?diamonds,magenta" alt="Diamond Rush">
+                        <span class="tag yellow">REWARDS</span>
+                    </div>
+                    <div class="game-details">
+                        <h3>Diamond Rush</h3>
+                        <p>Chase sparkling prizes and boost your social score.</p>
+                        <button class="game-btn yellow">Play Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-games">
+                <button class="btn outline neon-green">Enter 50+ More Arenas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Master the Field <br><span class="gradient-text">Without THE STRINGS</span></h2>
+                <div class="about-features">
+                    <div class="about-item">
+                        <i data-lucide="users-2" class="icon neon-green"></i>
+                        <div>
+                            <h3>SOCIAL PLAY CONNECT</h3>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <i data-lucide="shield-check" class="icon neon-pink"></i>
+                        <div>
+                            <h3>SAFE ARENA SYSTEM</h3>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <i data-lucide="chevron-down" class="icon accent-yellow"></i>
+                        <div>
+                            <h3>TRANSPARENT PLAY</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="device-frame">
+                    <img src="https://source.unsplash.com/1600x900/?gaming,green" alt="About visual">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="section-padding">
+        <div class="container faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-header">
+                    <span>Are there any financial risks involved?</span>
+                    <i data-lucide="chevron-down" class="chevron"></i>
+                </div>
+                <div class="faq-content">
+                    <p>None at all — our platform is entirely free-to-play and meant for entertainment. There are no real credits or wagering.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">
+                    <span>What age do I need to be to join?</span>
+                    <i data-lucide="chevron-down" class="chevron"></i>
+                </div>
+                <div class="faq-content">
+                    <p>You must be 18 or older to participate. Please see our 18+ notice below for details.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">
+                    <span>Do I need to install anything?</span>
+                    <i data-lucide="chevron-down" class="chevron"></i>
+                </div>
+                <div class="faq-content">
+                    <p>No installations required. All arenas run directly in your browser with instant access.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">
+                    <span>How do you ensure fair play?</span>
+                    <i data-lucide="chevron-down" class="chevron"></i>
+                </div>
+                <div class="faq-content">
+                    <p>Our systems monitor every arena to guarantee balanced gameplay and transparency. We prioritize social fun over competition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>Follow us on social media for updates!</p>
-        <ul>
-            <li><a href="https://twitter.com">Twitter</a></li>
-            <li><a href="https://facebook.com">Facebook</a></li>
-        </ul>
-        <p>&copy; 2026 Social Gaming. All rights reserved.</p>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><span class="brand">Gameluxx</span><span class="domain">.site</span></div>
+                <p class="muted">Gameluxx.site is a free-to-play social gaming arcade, built around community challenges and digital arenas. No purchases, no risks—just pure entertainment.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#games"><i data-lucide="gamepad-2"></i>All Arenas</a></li>
+                    <li><a href="#features"><i data-lucide="zap"></i>Features</a></li>
+                    <li><a href="#about"><i data-lucide="target"></i>Our Mission</a></li>
+                    <li><a href="#faq"><i data-lucide="help-circle"></i>Support/FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-community">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#about"><i data-lucide="users"></i>Social Connect</a></li>
+                    <li><a href="#games"><i data-lucide="bar-chart-3"></i>Leaderboards</a></li>
+                    <li><a href="#about"><i data-lucide="shield"></i>Responsible Play</a></li>
+                    <li><a href="#faq"><i data-lucide="lock"></i>Privacy Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <span class="badge">18+</span>
+            <div class="disclaimer-text">
+                <h5>IMPORTANT SOCIAL PLAY NOTICE</h5>
+                <p>This platform is for entertainment only and features social games with no cash prizes. Users engage in a community-driven environment where play credits are purely digital. Enjoy responsibly.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Gameluxx.site. All rights reserved.
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
 </body>
 </html>
